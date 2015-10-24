@@ -20,7 +20,8 @@ distEmmPerYear <-  NEI %>% group_by(year) %>% select(year,Emissions) %>% summari
 png(filename="plot1.png", width = 480, height = 480,units = "px")
 #Plot1
 
-plot(distEmmPerYear$year,distEmmPerYear$Emissions, type = "l" , xlab="Year" , ylab = "Emissions", axes=FALSE)
+plot(distEmmPerYear$year,distEmmPerYear$Emissions/1000000, type = "l" , xlab="Year" , ylab = "Emissions (scale 1=1000000)", axes=FALSE)
 axis(1, at=seq(1998,2009,by=1))
-axis(2, at=seq(0,80000000,by=1000000), las=2)
+axis(2, at=seq(0,80000000/1000000,by=1000000/1000000))
+
 dev.off()

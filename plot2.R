@@ -18,7 +18,8 @@ distEmmPerYearBalti <-  NEI %>% filter(fips == "24510") %>% group_by(year) %>% s
 #Construct the plot and save it to a PNG file in your work directory with a width of 480 pixels and a height of 480 pixels.
 png(filename="plot2.png", width = 480, height = 480,units = "px")
 #Plot2
-plot(distEmmPerYearBalti$year,distEmmPerYearBalti$Emissions, type = "l" , xlab="Year" , ylab = "Emissions", axes=FALSE)
-axis(1, at=distEmmPerYearBalti$year)
-axis(2, at=distEmmPerYearBalti$Emissions, las=2)
+
+plot(distEmmPerYearBalti$year,distEmmPerYearBalti$Emissions/1000, type = "l" , xlab="Year" , ylab = "Emissions (scale 1=1000)", axes=FALSE )
+axis(1, at=seq(1998,2009,by=1))
+axis(2, at=seq(0,4000/1000, by=1000/1000)) #round(distEmmPerYearBalti$Emissions/10, digit=0)) #distEmmPerYearBalti$Emissions, las=2)
 dev.off()

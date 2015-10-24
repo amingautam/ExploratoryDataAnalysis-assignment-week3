@@ -7,8 +7,8 @@ library(ggplot2)
 #unzip("./exdata_data_NEI_data.zip")
 
 #loading of data
-#NEI <- readRDS("./exdata_data_NEI_data/summarySCC_PM25.rds")
-#SCC <- readRDS("./exdata_data_NEI_data/Source_Classification_Code.rds")
+#NEI <- readRDS("./summarySCC_PM25.rds")
+#SCC <- readRDS("./Source_Classification_Code.rds")
 
 #4. Across the United States, how have emissions from coal combustion-related
 #sources changed from 1999???2008?

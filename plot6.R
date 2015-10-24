@@ -7,8 +7,8 @@ library(ggplot2)
 #unzip("./exdata_data_NEI_data.zip")
 
 #loading of data
-#NEI <- readRDS("./exdata_data_NEI_data/summarySCC_PM25.rds")
-#SCC <- readRDS("./exdata_data_NEI_data/Source_Classification_Code.rds")
+#NEI <- readRDS("./summarySCC_PM25.rds")
+#SCC <- readRDS("./Source_Classification_Code.rds")
 
 #6. Compare emissions from motor vehicle sources in Baltimore City with emissions 
 #from motor vehicle sources in Los Angeles County, California (fips == "06037"). 

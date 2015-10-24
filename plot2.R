@@ -6,8 +6,8 @@ library(dplyr)
 #unzip("./exdata_data_NEI_data.zip")
 
 #loading of data
-#NEI <- readRDS("./exdata_data_NEI_data/summarySCC_PM25.rds")
-#SCC <- readRDS("./exdata_data_NEI_data/Source_Classification_Code.rds")
+#NEI <- readRDS("./summarySCC_PM25.rds")
+#SCC <- readRDS("./Source_Classification_Code.rds")
 
 #2. Have total emissions from PM2.5 decreased in the 
 #Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 

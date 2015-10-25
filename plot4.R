@@ -2,13 +2,13 @@ library(dplyr)
 library(ggplot2)
 
 #This will download the file & unzip it in your work directory - check with getwd()
-#fileurl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
-#download.file(url=fileurl,destfile="./exdata_data_NEI_data.zip",method="curl")
-#unzip("./exdata_data_NEI_data.zip")
+fileurl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+download.file(url=fileurl,destfile="./exdata_data_NEI_data.zip",method="curl")
+unzip("./exdata_data_NEI_data.zip")
 
 #loading of data
-#NEI <- readRDS("./summarySCC_PM25.rds")
-#SCC <- readRDS("./Source_Classification_Code.rds")
+NEI <- readRDS("./summarySCC_PM25.rds")
+SCC <- readRDS("./Source_Classification_Code.rds")
 
 #4. Across the United States, how have emissions from coal combustion-related
 #sources changed from 1999???2008?
